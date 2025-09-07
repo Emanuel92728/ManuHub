@@ -1,7 +1,3 @@
--- Brookhaven-Lite: Um script único (Server) que cria remotes + lógica server-side
--- e injeta um LocalScript cliente em cada jogador para interação (HUD/atalhos).
--- COLE ISTO EM ServerScriptService
-
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
@@ -329,7 +325,3 @@ Players.PlayerRemoving:Connect(function(player)
 	PlayerManager:SaveAndCleanup(player)
 end)
 
--- ======= Dica final impressa no Output (Studio) =======
-print("Brookhaven-Lite: script único carregado.")
-print("Coloque modelos de casa em Workspace.Assets com nomes: exampleHouseModel_small, exampleHouseModel_medium, exampleHouseModel_large")
-print("Coloque modelos de veículos em Workspace.Assets com um VehicleSeat dentro para permitir entrar.")
